@@ -1,0 +1,24 @@
+<h1 id="tableLabel">OrderBook</h1>
+
+<p *ngIf="!orderBook"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="orderBook">
+  <thead>
+    <tr>
+      <th>Side</th>
+      <th>Quantity</th>
+      <th>Price</th>
+      <th>CurrencyPair</th>
+      <th>OrderCount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let ask of orderBook.asks">
+      <td>{{ ask.side }}</td>
+      <td>{{ ask.quantity }}</td>
+      <td>{{ ask.price }}</td>
+      <td>{{ ask.currencyPair }}</td>
+      <td>{{ ask.orderCount }}</td>
+    </tr>
+  </tbody>
+</table>

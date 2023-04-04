@@ -1,0 +1,21 @@
+.place-order{
+    background-color:none;
+  }
+  
+.available-header {
+    margin: 0px;
+    color: var(--white);
+    font-size: 18px;
+    padding: 0px;
+}
+
+.available-header1 {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    line-height: 25px;
+    padding-bottom: 10px;
+}

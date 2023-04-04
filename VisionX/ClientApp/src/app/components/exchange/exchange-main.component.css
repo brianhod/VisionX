@@ -1,0 +1,16 @@
+.main-exchange{
+    width: 100%;
+    height: calc(100vh - 80px);
+    grid-template-areas:
+        "buy main"
+        "buy main";
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 275px 1fr;
+    display: grid;
+}
+
+
+.exchange-display {
+    display: grid;
+}
+
